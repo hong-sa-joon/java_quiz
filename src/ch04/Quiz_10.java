@@ -5,8 +5,10 @@ import java.util.Scanner;
 public class Quiz_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);//입력기능
-        boolean bank = true;
+        boolean bank = true;//실행상태
         int money = 10000;//잔고
+
+
         while (bank) {
             //메뉴생성
             System.out.println("==========================");
@@ -31,5 +33,10 @@ public class Quiz_10 {
             }
         }
         System.out.println("프로그램 종료");
+
+
+
+
+
     }
 }
