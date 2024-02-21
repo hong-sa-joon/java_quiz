@@ -141,13 +141,14 @@ public class CustomerApplication {
 
         System.out.println("사용포인트");
         int accumulate=scanner.nextInt();
+            if (customer.getPoint()<accumulate){
+                System.out.println("보유포인트가 적습니다.");
+                return;
+            }
 
 
         if (customer.getPoint() < 500) {
             System.out.println("500포인트 이상만 사용가능합니다.");
-            if (customer.getPoint()<0){
-                return;
-            }
             return;
         }
 
